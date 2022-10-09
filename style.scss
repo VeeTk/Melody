@@ -34,7 +34,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 81px 0px 81px;
+    max-width: 1280px;
     margin: 0 auto;
     ul{
         display: flex;
@@ -66,11 +66,23 @@ body{
 
 .main{
     display: flex;
-    margin: 54px 81px 99px 81px;
+    max-width: 1280px;
+    padding: 54px 81px 99px 81px;
+    margin: auto;
     justify-content: center;
 }
 
-.floor{
+.home{
+    path{
+        opacity: 0;
+        cursor: pointer;
+    }
+    path:hover{
+        opacity: 0.85;
+    }
+}
+
+.counter{
     display:grid;
     flex-wrap: wrap;
     align-content: space-between;
@@ -82,19 +94,29 @@ body{
     }
 }
 
-.floor__text{
+.counter__text{
     font-family: 'BebasNeueRegular' , sans-serif;
     font-size: 37px;
     line-height: 44px;
     color: #635854;
 }
 
-.number{
-    width: 74.91px;
-    height: 75.68px;
+.counter__group{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    span{
+        font-family: 'BebasNeueRegular', sans-serif;
+        font-size: 105px;
+        color: #635854;
+    }
 }
 
 .arrow{
+    background-color:#fff;
+}
+
+.arrow-1{
     padding-bottom: 35px;
     cursor: pointer;
 }
@@ -110,14 +132,14 @@ body{
     height: 51px;
     cursor: pointer;
     background: #3596F5;
+    color: #fff;
     border-radius: 6px;
+    font-size: 16px;
+    line-height: 19px;
     display:grid;
     flex-wrap: wrap;
     align-content: center;
-    p{
+    button{
         background: inherit;
-        color: #fff;
-        font-size: 16px;
-        line-height: 19px;
     }
 }
