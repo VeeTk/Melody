@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*===================================================*/
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../fonts/BebasNeueRegular.svg") format("svg"), url("../fonts/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  background-color: #635854;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-bottom: solid 4px #3596F5;
+  color: #fff;
+}
+.header a {
+  color: inherit;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 81px 0px 81px;
+  margin: 0 auto;
+}
+.header__container ul {
+  display: flex;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.header__container ul li {
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.navbar__contacts {
+  display: grid;
+  text-align: right;
+  font-size: 14px;
+  line-height: 16px;
+}
+.navbar__contacts a {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  margin: 54px 81px 99px 81px;
+  justify-content: center;
+}
+
+.floor {
+  display: grid;
+  flex-wrap: wrap;
+  align-content: space-between;
+  text-align: center;
+  padding: 68px 122px 68px 122px;
+}
+.floor img {
+  display: block;
+  margin: auto;
+}
+
+.floor__text {
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 37px;
+  line-height: 44px;
+  color: #635854;
+}
+
+.number {
+  width: 74.91px;
+  height: 75.68px;
+}
+
+.arrow {
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+
+.arrow-2 {
+  transform: rotate(180deg);
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+
+.floor__button {
+  width: 297px;
+  height: 51px;
+  cursor: pointer;
+  background: #3596F5;
+  border-radius: 6px;
+  display: grid;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.floor__button p {
+  background: inherit;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+}
