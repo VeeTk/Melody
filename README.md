@@ -1,2 +1,3 @@
 # Melody
-Educational project from Glo Academy
+Учебный проект
+## Проект выполнил : Дмитрий Ткачев
