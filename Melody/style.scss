@@ -80,6 +80,9 @@ body{
     path:hover{
         opacity: 0.85;
     }
+    path.current-floor{
+        opacity: 0.85;  //Здесь класс, котрый был создан в JS !//
+    }
 }
 
 .counter{
@@ -111,6 +114,8 @@ body{
         color: #635854;
     }
 }
+
+
 
 .arrow{
     background-color:#fff;

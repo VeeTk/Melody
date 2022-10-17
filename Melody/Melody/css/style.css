@@ -100,9 +100,6 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
-.header__container .header__logo {
-  cursor: pointer;
-}
 .header__container ul {
   display: flex;
   font-size: 16px;
@@ -144,23 +141,20 @@ body {
 .home path:hover {
   opacity: 0.85;
 }
-.home path.current-floor {
-  opacity: 0.85;
-}
 
-.main-info {
+.counter {
   display: grid;
   flex-wrap: wrap;
   align-content: space-between;
   text-align: center;
   padding: 68px 122px 68px 122px;
 }
-.main-info img {
+.counter img {
   display: block;
   margin: auto;
 }
 
-.main-title {
+.counter__text {
   font-family: "BebasNeueRegular", sans-serif;
   font-size: 37px;
   line-height: 44px;
@@ -208,100 +202,4 @@ body {
 }
 .floor__button button {
   background: inherit;
-}
-
-.modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity 0.2s;
-}
-
-.is-open {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.modal-dialog {
-  position: relative;
-  max-width: 1003px;
-  min-height: 565px;
-  background-color: #fff;
-  flex-grow: 1;
-  display: flex;
-  opacity: 0;
-  transform: translateY(-10%);
-  transition: transform 0.2s, opacity 0.2s;
-  transition-delay: 0.2s;
-}
-
-.is-open > .modal-dialog {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.modal-image {
-  background-color: #ebebeb;
-  width: 60%;
-  text-align: center;
-  padding: 50px;
-}
-.modal-image .flats path {
-  opacity: 0;
-  cursor: pointer;
-}
-.modal-image .flats path:hover {
-  opacity: 1;
-}
-
-.modal-title {
-  font-family: "BebasNeueRegular";
-  font-size: 24px;
-  line-height: 29px;
-  margin-bottom: 20px;
-}
-
-.modal-info {
-  padding: 50px 46px;
-  width: 40%;
-  font-family: "BebasNeueRegular";
-  font-size: 24px;
-  line-height: 29px;
-}
-.modal-info a {
-  color: #635854;
-  font-family: "Roboto";
-  font-size: 16px;
-  line-height: 19px;
-}
-.modal-info a:hover {
-  color: #3596F5;
-  text-decoration: underline;
-}
-.modal-info .flat-list {
-  padding-top: 55px;
-  padding-bottom: 45px;
-}
-.modal-info p {
-  font-family: "Roboto";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #635854;
-}
-
-.modal-close-button {
-  position: absolute;
-  right: 27px;
-  top: 27px;
-  background-color: #fff;
 }
