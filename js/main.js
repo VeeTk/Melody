@@ -6,6 +6,13 @@ $(document).ready(function () {
     var modal = $(".modal");
     var modalCloseButton = $(".modal-close-button");
     var veiwFlatsButton = $(".floor__button");
+    var menuButton = $(".menu-button");
+    var navbarPanel = $(".navbar__panel");
+
+
+    menuButton.on("click", function(){
+        navbarPanel.toggle("fast");
+    })
 
 
     //Функция при наведении мышкой на этаж//

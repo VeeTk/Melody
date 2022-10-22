@@ -141,9 +141,6 @@ body {
 .home path:hover {
   opacity: 0.85;
 }
-.home path.current-floor {
-  opacity: 0.85;
-}
 
 .counter {
   display: grid;

@@ -9,34 +9,39 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container container">
             <div class="header__logo"><img src="img/Мелодия.svg" alt="">
             </div>
-            <div class="header__nav">
-                <ul class="navbar__content">
-                    <li><a href="#" class="link__navbar"></a>Подобрать<br>квартиру</li>
-                    <li><a href="#" class="link__navbar"></a>Забронировать<br>квартиру</li>
-                    <li><a href="#" class="link__navbar"></a>Ход<br>строительства</li>
-                    <li><a href="#" class="link__navbar"></a>Проектная<br>декларация</li>
-                </ul>
+            <div class="navbar__panel">
+                <div class="header__nav">
+                    <ul class="navbar__content">
+                        <li class="link__navbar"><a href="#" ></a>Подобрать<br>квартиру</li>
+                        <li class="link__navbar"><a href="#" ></a>Забронировать<br>квартиру</li>
+                        <li class="link__navbar"><a href="#" ></a>Ход<br>строительства</li>
+                        <li class="link__navbar"><a href="#" ></a>Проектная<br>декларация</li>
+                    </ul>
+                </div>
+                <div class="navbar__contacts">
+                    <span class="navbar__text">Закажите звонок:</span>
+                    <a href="tel:+78431234567">8 (843) 123-45-67</a>
+                </div>
             </div>
-            <div class="navbar__contacts">
-                <span class="navbar__text">Закажите звонок:</span>
-                <a href="tel:+78431234567">8 (843) 123-45-67</a>
-            </div>
+            <button class="menu-button">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
         </div>
     </header>
-    <main class="main">
+    <main class="main container">
         <!--Изображение дома с svg изображениями подсвечивания этажей-->
         <div class="main__image">  
-            <svg class="home" width="734" height="640" viewBox="0 0 734 640" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="734" height="640" fill="url(#pattern0)"/>
-                <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_1_86" transform="translate(-0.00408719) scale(0.0013624 0.0015625)"/>
-                </pattern>
+            <svg class="home-image" width="740" height="640"  viewBox="0 0 734 640" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                
+                
+                
                 <image id="image0_1_86" width="740" height="640" xlink:href="img/home 1.png"/>
-                </defs>
+                
                 <path data-floor="02" d="M222 532L442.8 540L512 526.3V548L443.5 567.7L222 556.7V532Z" fill="#3595F6" fill-opacity="0.75"/>
                 <path data-floor="03" d="M223 531V506L443.3 509.3L513 506V526L443.7 539L223 531Z" fill="#3595F6" fill-opacity="0.75"/>
                 <path data-floor="04" d="M223 505V480H444H513V503L445 510L223 505Z" fill="#3595F6" fill-opacity="0.75"/>
@@ -80,7 +85,7 @@
                 <h3 class="modal-title">Этаж <span class="modal-counter counter">02</span></h3>
                 <svg 
                 class="flats"
-                width="433" height="408" viewBox="0 0 433 408" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                viewBox="0 0 433 408" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <image id="image0_0_1" width="433" height="408" xlink:href="img/Floor-modal.png"/>
                     <path d="M388 81V141H314V148H267.5V131H247V32.5H338.5V16H405V81H388Z" fill="#3595F6" fill-opacity="0.75"/>
                     <path d="M314 148.5H268V200H367.5V205H387.5V141H314V148.5Z" fill="#3595F6" fill-opacity="0.75"/>
