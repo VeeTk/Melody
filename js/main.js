@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     menuButton.on("click", function(){
         navbarPanel.toggle("fast");
-    })
+    })  //При клике на кнопку меню , оно будет появляться и исчезать//
 
 
     //Функция при наведении мышкой на этаж//
