@@ -79,6 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   height: 100%;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
 }
 
 body {
@@ -338,10 +340,6 @@ body {
   color: #3596F5;
   text-decoration: underline;
 }
-.modal-info .flat-list {
-  padding-top: 55px;
-  padding-bottom: 45px;
-}
 .modal-info p {
   font-family: "Roboto";
   font-style: italic;
@@ -349,6 +347,11 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #635854;
+}
+
+.flat-list {
+  padding-top: 55px;
+  padding-bottom: 45px;
 }
 
 .modal-close-button {
@@ -448,8 +451,12 @@ body {
   .navbar__panel {
     display: contents;
   }
-  .counter {
+  .counter__namber {
     font-size: 95px;
+  }
+  .footer-contacts {
+    margin-left: 17px;
+    margin-right: 25px;
   }
 }
 @media (max-width: 992px) {
@@ -503,7 +510,7 @@ body {
     background-color: #fff;
     display: block;
   }
-  .counter {
+  .counter__namber {
     font-size: 80px;
   }
   .arrow {
@@ -519,9 +526,13 @@ body {
     margin-right: 40px;
     margin-bottom: 25px;
   }
+  body {
+    position: fixed;
+  }
   .modal-dialog {
     display: block;
     max-width: 433px;
+    bottom: 80px;
   }
   .modal-image {
     width: 100%;
@@ -529,6 +540,20 @@ body {
   .modal-info {
     width: 100%;
     text-align: center;
+    padding-top: 25px;
+  }
+  .flat-list {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .modal-info .flat-link {
+    font-size: 15px;
+  }
+  .modal-info .flat-item {
+    line-height: 25px;
+  }
+  .modal-text {
+    font-size: 20px;
   }
   .arrow {
     padding-bottom: 20px;
@@ -536,5 +561,30 @@ body {
   .counter__group {
     margin-top: 27px;
     margin-bottom: 27px;
+  }
+}
+@media (max-width: 1070px) {
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 810px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .footer-contacts span {
+    font-size: 13px;
+  }
+  .footer-contacts a {
+    font-size: 15px;
+  }
+  .footer-right {
+    font-size: 15px;
   }
 }
